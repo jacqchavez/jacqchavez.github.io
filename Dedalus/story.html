@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Story</title>
+
+    <script src="http://olado.github.io/doT/doT.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="dedalus.js"></script>
+    <script src="dedalus-web.js"></script>
+
+    <link rel="stylesheet" href="themes/plain/story.css">
+
+</head>
+
+<body>
+    <div id="story">
+
+        <initscript>
+        </initscript>
+
+        <beforeEveryThing>
+        </beforeEveryThing>
+
+        <beforeEveryPageTurn>
+        </beforeEveryPageTurn>
+
+        <beforeEveryParagraphShown>
+        </beforeEveryParagraphShown>
+
+        <afterEveryThing>
+        </afterEveryThing>
+
+        <afterEveryPageTurn>
+        </afterEveryPageTurn>
+
+        <afterEveryParagraphShown>
+        </afterEveryParagraphShown>
+
+        <!-- Novel -->
+        <title>The Gas Station</title>
+
+
+
+        <!-- Pages -->
+        <page id="intro">
+            Late at night on a highway in Northern Ontario, a woman driving her car is relieved to finally find a gas station that's still open, so she pulls in. The attendant comes out and walks up to the driver's side. He stands there, waiting until she rolls down her window.
+
+        </page>
+
+        <page id="relaxing" class="first">
+            <p>
+                She decided to drive
+                <show paragraph="dummyParagraph">away</show>.
+            </p>
+
+
+            <p>
+                <interact with="dummyObject"></interact>
+            </p>
+
+            <p>She slips it down
+
+                <turn to="page2">just a crack.</turn>
+            </p>
+
+            <paragraph id="dummyParagraph">
+                But she needs gas!
+            </paragraph>
+        </page>
+
+        <page id="page2">
+            "How much?" he asks. She tells him to fill it up. The attendant walks towards the back of the car and stands there a minute. The woman waits, then looks into the side-view mirror. The attendant is just standing there, facing her. She's feeling pretty nervous, wondering why he's not pumping gas. Then he walks back up to the window and taps on it. "You need to open the flap ma'am."
+
+            <p>
+                She keeps staring at
+                <show paragraph="dummyParagraph">him</show>.
+            </p>
+
+
+            <p>
+                <interact with="dummyObject"></interact>
+            </p>
+
+            <p>Feeling stupid, the woman reaches down and
+
+                <turn to="page3">clicks the gas flap open. </turn>
+            </p>
+
+            <paragraph id="dummyParagraph">
+                "You need to open the flap ma'am."
+            </paragraph>
+
+
+
+        </page>
+
+        <page id="page3">
+            The attendant walks back and starts pumping the gas. A minute or so later he finishes, and clicks the nozzle back into place on the pump. Then he stands there for a moment. The woman keeps looking at him in the side-view mirror, feeling quite ill-at-ease. She doesn't like this: being alone at a tiny gas station in the middle of nowhere with only this stranger. The attendant then walks back up to the window and taps on it.
+
+            <p>
+                She drives
+                <show paragraph="dummyParagraph">away</show>.
+            </p>
+
+
+            <p>
+                <interact with="dummyObject"></interact>
+            </p>
+
+
+            <p>She reaches into her purse and takes out her credit card, rolls open the window just a crack again, and as she passes the card through
+
+                <turn to="page4"> looks up at the attendant. </turn>
+            </p>
+
+            <paragraph id="dummyParagraph">
+                "That's against the law!"
+            </paragraph>
+
+
+        </page>
+        <page id="page4">
+            He's staring down at her with wide, frightful eyes. She looks away quickly, really creeped out, and she rolls the window back up as soon as the attendant grasps the card. But he doesn't go to the cash booth, he just stands there a moment. The woman can't bear to look at him again. Finally he says, with a voice muffled through the closed window: "Ma'am, there's a problem with your card. Could you please step inside the cash booth?"
+
+
+            <p>
+                She steps
+                <show paragraph="dummyParagraph">outside</show>.
+            </p>
+
+
+            <p>
+                <interact with="dummyObject"></interact>
+            </p>
+
+
+            <p>"What's wrong with the card?" she asks loudly, with a definite strain
+                <turn to="page5"> in her voice</turn>.
+            </p>
+
+            <paragraph id="dummyParagraph">
+                She doesn't trust him.
+            </paragraph>
+        </page>
+        <page id="page5">
+            "Something's wrong with the barcode. I'll need you to come over to the cash so we can make a call to the company." There's no way she is getting outside her car, on an empty, dark highway, late at night, with only that weirdo around. Besides, she realizes, as a sudden chill overcomes her, how could he know if there was a problem with the barcode if he hadn't even been to the cash desk to swipe it? The woman's breathing suddenly increases as she feels panic creep upon her.
+
+            <p> She summons up a note of restraint in her voice:
+
+                <show paragraph="dummyParagraph">"Alright. I'll go"</show>.
+            </p>
+
+
+            <p>
+                <interact with="dummyObject"></interact>
+            </p>
+
+
+            <p>She summons up a note of restraint in her voice:
+
+                <turn to="page6">"Please, can you just call them yourself?"</turn>
+            </p>
+
+            <paragraph id="dummyParagraph">
+                She doesn't trust him.
+            </paragraph>
+        </page>
+        <page id="page6">
+            "Sorry, but I'll need to see some I.D. Could you please just step over to the booth? It'll only take a minute." Realizing he won't let it be, she whispers a prayer.
+
+            <p> She follows him to the
+                <show paragraph="dummyParagraph">cash desk.</show>.
+            </p>
+
+            <p>
+                <interact with="dummyObject"></interact>
+            </p>
+
+
+            <p>She reaches into her purse
+
+                <turn to="page8"> to check for cash. </turn>
+            </p>
+
+            <paragraph id="dummyParagraph">
+                Maybe you should check if she has cash.
+            </paragraph>
+        </page>
+        <page id="page8">
+            Yes! She has a fifty dollar bill. Clutching it in her hand she unrolls the window just a crack yet again and passes it through. "Nevermind, I'll just pay cash." "Ma'am, are you sure?" he asks. "What?" she almost yells, as she accidentally looks up at him again. The same wide, fearful eyes staring down at her. She looks away. "Yes! Cash!"
+
+            <p>"I can fix the card problem, you just need to come over to the phone with me," he says. She's really terrified now, and half-screams at the man: "Listen, it's cash! That's all your getting from me!"
+            </p>
+
+            <p>
+                "Alright, alright," he responds, "Now you just wait right here and I'll go get your change. Don't move. I'll be right back." She can see him out of her peripheral vision, walking backwards towards the booth, always facing her. She can't bear to look his way. She can't imagine what he has in the booth. What if he brings it back with him? Forget the change, she thinks, just as she realizes he also still has her credit card. She can't take this anymore: Forget the card, I'll cancel it!
+            </p>
+
+            <p> She starts up the car and waits for the
+                <show paragraph="dummyParagraph">change and her card</show>.
+            </p>
+
+            <p>
+                <interact with="dummyObject"></interact>
+            </p>
+
+
+            <p>She starts up the car and as soon as it hums to
+
+                <turn to="page9">life she tears away and off into the dark night. </turn>
+            </p>
+
+            <paragraph id="dummyParagraph">
+                She has waited enough! Lets go!
+            </paragraph>
+        </page>
+        <page id="page9">
+            The attendant is in his booth on the phone, breathing heavily.
+            <br>An official-sounding voice on the other end asks: "Did you tell her?"
+            <br>"No," the attendant responds, "I couldn't."
+            <br>"Why not?"
+            <br>"He had a knife and a finger to his lips. I tried to get her out of there, but the whole time he was watching me from the floor behind her seat."
+
+
+
+            <p>
+                Story made by reddit user: <a href="https://www.reddit.com/r/AskReddit/comments/bhbyx/reddit_what_is_your_creepiest_most_unnerving/">/u/Doodeyfoodle</a>
+            </p>
+        </page>
+
+    </div>
+
+    <div id="wrapper">
+        <div id="title"></div>
+
+        <div id="host"></div>
+    </div>
+
+    <div id="interactionHost"></div>
+
+    <div id="undoStageHost"></div>
+
+    <script>
+        $(function () {
+            new DedalusWeb({
+                domSource: $('#story'),
+                domTarget: $('#host'),
+                titleTarget: $('#title'),
+                inventoryTarget: $('#inventoryHost'),
+                interactionTarget: $('#interactionHost'),
+                undoTarget: $('#undoHost'),
+                undoStageTarget: $('#undoStageHost'),
+                saveTarget: $('#saveHost'),
+                restoreTarget: $('#restoreHost'),
+                resetTarget: $('#reseteHost'),
+            });
+        });
+    </script>
+</body>
+
+</html>
